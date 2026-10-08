@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raphael Vigafria — Full-Stack Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="grid-bg"></div>
+  <div class="particles" id="particles"></div>
+</div>
+<div class="spotlight" id="spotlight"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">R.V.<span>DEV</span></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section class="hero" id="home">
+    <div class="status-badge">
+      <span class="dot"></span>
+      Available for projects
+    </div>
+
+    <div class="hero-profile">
+      <div class="profile-photo"></div>
+      <h1>
+        Hello, I'm
+        <span class="grad">Raphael Vigafria</span>
+      </h1>
+    </div>
+
+    <p class="sub">
+      A 3rd-year <strong>BSIT student and aspiring full-stack developer</strong> who builds practical web applications, database-driven systems, and developer-focused tools.
+    </p>
+
+    <div class="stats-bar">
+      <div class="stat-box"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Year Level</div></div>
+      <div class="stat-box"><div class="stat-num" data-count="10">0</div><div class="stat-lbl">Skills</div></div>
+      <div class="stat-box"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Projects</div></div>
+      <div class="stat-box"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Core Projects</div></div>
+    </div>
+
+    <div class="facts">
+      <div class="fact">🎓 <strong>BSIT</strong> · 3rd Year</div>
+      <div class="fact">⚡ <strong>Full-Stack</strong> Development</div>
+      <div class="fact">🗄️ <strong>Databases</strong> & APIs</div>
+      <div class="fact">🤖 <strong>AI-assisted</strong> Applications</div>
+    </div>
+
+    <div class="links">
+      <a class="btn btn-primary" href="mailto:raphaelmvigafria@gmail.com"><span>✉️ Email me</span></a>
+      <a class="btn btn-ghost" href="#projects">View projects ↓</a>
+      <a class="btn btn-ghost" href="https://t.me/BoyVig" target="_blank">✈️ Telegram</a>
+      <a class="btn btn-ghost" href="https://www.facebook.com/raphael.manon.og.vigafria.2025" target="_blank">📘 Facebook</a>
+      <a class="btn btn-ghost" href="tel:+639639465627">📞 Call</a>
+      <a class="btn btn-ghost" href="https://github.com/RaphaelVigafria" target="_blank">🐙 GitHub</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <section class="content-sec" id="about">
+    <div class="section-head">
+      <div class="section-label">01 — Profile</div>
+      <h2>Developer <span class="grad-2">profile</span></h2>
+      <p>A concise snapshot of what I build and the direction I am pursuing.</p>
+    </div>
+    <div class="about-card reveal profile-card">
+      <p><strong>Raphael Vigafria</strong> is a 3rd-year Bachelor of Science in Information Technology student focused on software development, databases, and modern web technologies. I enjoy turning requirements into usable interfaces and working applications, from database-backed systems to full-stack platforms with authentication, dashboards, and AI features.</p>
+      <div class="profile-points">
+        <span>• JavaScript / Node.js</span><span>• Java / Python</span><span>• MySQL / MongoDB</span><span>• REST APIs / JWT</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-sec">
+    <div class="section-head">
+      <div class="section-label">02 — About</div>
+      <h2>A little <span class="grad-2">about me</span></h2>
+    </div>
+
+    <div class="about-card reveal">
+      <p>
+        I'm <strong>Raphael</strong>, a 20-year-old BSIT student currently in my 3rd year of college.
+        I enjoy learning new technologies, working on school projects, and improving my
+        skills in web development. My goal is to become a <strong>professional developer</strong>
+        and build useful apps that help people.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-sec" id="education">
+    <div class="section-head">
+      <div class="section-label">03 — Education</div>
+      <h2>My educational <span class="grad-2">journey</span></h2>
+      <p>Currently pursuing a BSIT degree while building practical software projects.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item visible current">
+        <div class="tl-year">MAY 14, 2026 — 2027</div>
+        <div class="tl-title">Bachelor of Science in Information Technology (BSIT) — 3rd Year</div>
+        <div class="tl-desc">Currently pursuing my Bachelor of Science in Information Technology — sharpening my expertise in software development, database management, and modern web technologies. Driven by a commitment to build, learn, and grow every single day.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">MAY 20, 2025 — 2026</div>
+        <div class="tl-title">Bachelor of Science in Information Technology (BSIT) — 2nd Year</div>
+        <div class="tl-desc">Deepened my foundation in data structures, algorithms, and system design. Collaborated on real-world projects that strengthened both my technical skills and my ability to work within a team.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">JANUARY 8, 2024 — 2025</div>
+        <div class="tl-title">Bachelor of Science in Information Technology (BSIT) — 1st Year</div>
+        <div class="tl-desc">Where it all began — mastering the fundamentals of programming, computer systems, and problem-solving. The first step of a lifelong journey in technology.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-sec" id="focus">
+    <div class="section-head">
+      <div class="section-label">04 — Focus</div>
+      <h2>BSIT course <span class="grad-2">focus areas</span></h2>
+      <p>The subjects and skills I'm building through my BSIT program.</p>
+    </div>
+
+    <div class="focus-grid">
+      <div class="focus-card reveal">
+        <span class="emoji">🌐</span>
+        <h3>Web Development</h3>
+        <p>Building responsive websites and web apps using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="focus-card reveal d1">
+        <span class="emoji">🗄️</span>
+        <h3>Database Systems</h3>
+        <p>Designing and managing databases with MySQL for real-world applications.</p>
+      </div>
+      <div class="focus-card reveal d2">
+        <span class="emoji">💡</span>
+        <h3>Programming</h3>
+        <p>Learning core concepts of programming through Java and Python.</p>
+      </div>
+      <div class="focus-card reveal d3">
+        <span class="emoji">🔧</span>
+        <h3>System Analysis</h3>
+        <p>Understanding how to design and develop IT systems that solve problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-sec" id="projects">
+    <div class="section-head">
+      <div class="section-label">05 — Work</div>
+      <h2>Selected <span class="grad-2">projects</span></h2>
+      <p>Things I've built while studying and exploring web development.</p>
+    </div>
+
+    <div class="project reveal">
+      <div class="project-top">
+        <div class="project-icon">📚</div>
+        <h3>StudyMate — Full-Stack Academic Platform — <a href="https://studymate.raphaelmvigafria.workers.dev/" target="_blank" rel="noopener">here to see my work ↗</a></h3>
+      </div>
+      <p class="desc">
+        A full-stack academic platform designed to centralize student productivity, coursework, and study tools. Built with student/admin dashboards, task and calendar workflows, a focus timer, gamified quizzes, course checkout flows, and an AI study assistant powered by Google Gemini.
+      </p>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Gemini AI</span>
+      </div>
+      <div class="project-actions">
+        <button type="button" class="btn btn-primary" onclick="openGallery()">
+          <span>📸 View screenshots</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="project reveal d1">
+      <div class="project-top">
+        <div class="project-icon">🗂️</div>
+        <h3>Student Information System</h3>
+      </div>
+      <p class="desc">
+        A Java desktop application for managing student records — enrollment, grades,
+        and course assignments. Uses JDBC for database connectivity with MySQL, and
+        applies CRUD operations with prepared statements to prevent SQL injection.
+        Features a simple Swing interface for admin and student views.
+      </p>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Swing</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JDBC</span>
+      </div>
+    </div>
+
+    <div class="project reveal d2">
+      <div class="project-top">
+        <div class="project-icon">🚀</div>
+        <h3>Grade Analysis Script</h3>
+      </div>
+      <p class="desc">
+        A Python command-line tool that reads class grade sheets (CSV), computes averages
+        and standard deviations, flags at-risk students, and generates a summary report.
+        Uses pandas for data processing and matplotlib for basic visualizations.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">pandas</span>
+        <span class="tag">CSV</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-sec" id="skills">
+    <div class="section-head">
+      <div class="section-label">06 — Toolkit</div>
+      <h2>Skills &amp; <span class="grad-2">technologies</span></h2>
+      <p>Languages and tools I'm comfortable working with.</p>
+    </div>
+
+    <div class="skills-bars">
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="75"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">72%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="72"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">Git</span><span class="skill-pct">65%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="65"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">60%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">Node.js / Express</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">MongoDB</span><span class="skill-pct">65%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="65"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span class="skill-name">REST APIs / JWT</span><span class="skill-pct">68%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-pct="68"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-sec" id="experience">
+    <div class="section-head">
+      <div class="section-label">07 — Experience</div>
+      <h2>Organizations &amp; <span class="grad-2">experience</span></h2>
+      <p>Where I've been active beyond the classroom.</p>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Member — IT Society</div>
+          <div class="exp-org">Student Organization</div>
+        </div>
+        <div class="exp-date">2023 — Present</div>
+      </div>
+      <p class="exp-desc">Participating in tech events, workshops, and peer study sessions. Helping organize small campus coding activities.</p>
+    </div>
+
+    <div class="exp-card reveal d1">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Class Representative</div>
+          <div class="exp-org">BSIT Department</div>
+        </div>
+        <div class="exp-date">2024 — 2025</div>
+      </div>
+      <p class="exp-desc">Bridged communication between classmates and professors. Helped coordinate group projects and activities.</p>
+    </div>
+  </section>
+
+  <section class="content-sec" id="contact" style="border-bottom:none;">
+    <div class="section-head">
+      <div class="section-label">08 — Contact</div>
+      <h2>Let's <span class="grad-2">connect</span></h2>
+      <p>Open to collaborations, projects, and opportunities.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <label for="cName">Your Name</label>
+          <input type="text" id="cName" placeholder="Juan Dela Cruz" required>
+        </div>
+        <div class="field">
+          <label for="cEmail">Your Email</label>
+          <input type="email" id="cEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" placeholder="Hello Raphael, I'd like to..." required></textarea>
+        </div>
+        <button type="submit" class="contact-submit">📨 Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <a class="contact-item" href="mailto:raphaelmvigafria@gmail.com">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-text">
+            <div class="lbl">Email</div>
+            <div class="val">raphaelmvigafria@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-item" href="tel:+639639465627">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text">
+            <div class="lbl">Phone</div>
+            <div class="val">0963 946 5627</div>
+          </div>
+        </a>
+        <a class="contact-item" href="https://github.com/RaphaelVigafria" target="_blank">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-text">
+            <div class="lbl">GitHub</div>
+            <div class="val">github.com/RaphaelVigafria</div>
+          </div>
+        </a>
+        <a class="contact-item" href="https://t.me/Boy_Vig" target="_blank">
+          <div class="contact-icon">✈️</div>
+          <div class="contact-text">
+            <div class="lbl">Telegram</div>
+            <div class="val">@Boy_Vig</div>
+          </div>
+        </a>
+        <a class="contact-item" href="https://www.facebook.com/raphael.manon.og.vigafria.2025" target="_blank">
+          <div class="contact-icon">📘</div>
+          <div class="contact-text">
+            <div class="lbl">Facebook</div>
+            <div class="val">facebook.com/raphael.manon.og.vigafria.2025</div>
+          </div>
+        </a>
+        <a class="contact-item" href="#">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <div class="lbl">Location</div>
+            <div class="val">Philippines</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-social">
+      <a href="mailto:raphaelmvigafria@gmail.com" title="Email">✉️</a>
+      <a href="tel:+639639465627" title="Call">📞</a>
+      <a href="https://github.com/RaphaelVigafria" target="_blank" title="GitHub">🐙</a>
+      <a href="https://www.facebook.com/raphael.manon.og.vigafria.2025" target="_blank" title="Facebook">📘</a>
+    </div>
+    <p>© 2026 <span class="name">Raphael Manon-og Vigafria</span> — BSIT 3rd Year Student</p>
+    <p style="margin-top:6px;">Built with <span class="heart">♥</span> HTML &amp; CSS</p>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" title="Back to top">↑</button>
+
+<div id="smGallery" class="sm-gallery">
+  <div class="sm-gallery-inner">
+
+    <div class="sm-gallery-header">
+      <h2>StudyMate — Screenshots</h2>
+      <button type="button" class="sm-gallery-close" onclick="closeGallery()" aria-label="Close">×</button>
+    </div>
+
+    <div class="sm-gallery-grid">
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-login.png" alt="StudyMate login page">
+        <figcaption>Login page with student / admin tabs</figcaption>
+      </figure>
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-dashboard.png" alt="Student dashboard">
+        <figcaption>Student dashboard — achievements, schedule, tasks</figcaption>
+      </figure>
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-focus.png" alt="Focus clock">
+        <figcaption>Focus mode — analog clock with presets</figcaption>
+      </figure>
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-quiz.png" alt="Quiz result">
+        <figcaption>Quiz — EXP, levels, and puzzle mode</figcaption>
+      </figure>
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-pip.png" alt="Pip AI helper">
+        <figcaption>Pip — AI study assistant powered by Gemini</figcaption>
+      </figure>
+
+      <figure class="sm-gallery-fig">
+        <img src="sm-admin.png" alt="Admin dashboard">
+        <figcaption>Admin dashboard — payments &amp; students</figcaption>
+      </figure>
+
+    </div>
+
+    <p class="sm-gallery-hint">Press <kbd>Esc</kbd> or click the × to close</p>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
